@@ -20,8 +20,8 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm i eslint esm jsdom
+    - run: npm i esm jsdom
     - run: npx eslint .
-    - run: npx qunit index.js
+    - run: npx qunit test/index.js
       env:
         CI: true
