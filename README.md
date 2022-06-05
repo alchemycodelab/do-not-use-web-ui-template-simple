@@ -35,11 +35,11 @@ If needed, import functions and other JavaScript from their own modules. These w
 
 ### State
 
-The data that will change over time. Typically defined as `let` variables. These will be used from other code on the page.
+The data that will change over time. Typically defined as `let` variables. These will be set and read from other code on the page.
 
 #### Update Functions
 
-Encapsulate complexity for state update into a function. This is also the place to call utility functions and app logic as part of updating state.
+As state updates require more complex actions (like calling services), or repetitive code crops up in event listeners, use update functions in-between event handlers and state.
 
 ### Components
 
@@ -47,8 +47,11 @@ Logically grouped parts of the UI. A simple app may only have one component. Bre
 
 1. Define variables and assign via document methods (`getElementById`). A DOM element should only ever belong to one component
 1. Display functions. These utilize the state and dom variables to perform dom updates. They may utilize user-facing formatting functions
-1. Subscribe to needed events on DOM elements
+1. Subscribe to needed events on DOM elements. These should update state or call state update functions
 
 ### Page Load
 
 Code that should run when the page loads (other than event subscriptions which have already happened)
+
+## TDD Pure Functions
+
