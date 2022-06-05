@@ -2,7 +2,7 @@
 
 // state
     // define state variables
-    // optional update functions/actions
+    // optional handle action functions
 
 // components
     // define and grab DOM elements

@@ -37,9 +37,9 @@ If needed, import functions and other JavaScript from their own modules. These w
 
 The data that will change over time. Typically defined as `let` variables. These will be set and read from other code on the page.
 
-#### Update Functions
+#### Handle Action Functions
 
-As state updates require more complex actions (like calling services), or repetitive code crops up in event listeners, use update functions in-between event handlers and state.
+As state updates require more complex actions (like calling services), or repetitive code crops up in event listeners, use handleAction functions in-between event handlers and state.
 
 ### Components
 
