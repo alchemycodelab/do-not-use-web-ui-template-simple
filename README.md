@@ -17,3 +17,38 @@
 1. Once we know the _why_ of elements, state, and events -- think about how to implement the "Why" as a "How"
 1. Think about how to **validate each of your features** according to a Definition of Done
 1. Consider what features **_depend_ on what other features**. Use this dependency logic to figure out what order to complete tasks.
+
+## Guide to `app.js`
+
+1. import
+2. state
+3. components
+4. page load
+
+### Import
+
+If needed, import functions and other JavaScript from their own modules. These will generally be pure functions:
+
+1. App logic (game scoring)
+1. Render functions (create html dynamically)
+1. Utility functions (formatting, get a random number, etc.)
+
+### State
+
+The data that will change over time. Typically defined as `let` variables. These will be used from other code on the page.
+
+#### Update Functions
+
+Encapsulate complexity for state update into a function. This is also the place to call utility functions and app logic as part of updating state.
+
+### Components
+
+Logically grouped parts of the UI. A simple app may only have one component. Break each of these sections down into:
+
+1. Define variables and assign via document methods (`getElementById`). A DOM element should only ever belong to one component
+1. Display functions. These utilize the state and dom variables to perform dom updates. They may utilize user-facing formatting functions
+1. Subscribe to needed events on DOM elements
+
+### Page Load
+
+Code that should run when the page loads (other than event subscriptions which have already happened)

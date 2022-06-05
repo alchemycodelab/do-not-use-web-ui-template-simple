@@ -1,29 +1,13 @@
-// grab DOM elements
+// import needed modules
 
-// set event listeners
-// get info from user input
-// use user input to update state
-// update DOM to reflect the new state
+// state
+    // define state variables
+    // optional update functions/actions
 
-let x = 3;
+// components
+    // define and grab DOM elements
+    // display functions
+    // subscribe to events
 
-if (x === 5) {
-    console.log('5 time');
-}
+// page load actions
 
-function add(x, y) {
-    return x + y;
-}
-
-try {
-    add(5, x);
-}
-catch (err) {
-    console.log(err);
-}
-
-const cats = [];
-
-for (let cat in cats) {
-    console.log(cat);
-}
