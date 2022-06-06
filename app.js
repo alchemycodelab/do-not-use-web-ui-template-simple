@@ -7,7 +7,7 @@
 // components
     // define and grab DOM elements
     // display functions
-    // handle functions
+    // optional handle functions
     // subscribe to events
 
 // page load actions
