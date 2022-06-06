@@ -1,14 +1,18 @@
 // import needed modules
 
 // state
-    // define state variables
-    // optional action functions
 
 // components
+    // component
     // define and grab DOM elements
     // display functions
-    // optional handle functions
-    // subscribe to events
+    // optional: subscribe to events
+        // event handlers - what needs to happen?
+        // logic and calculations
+        // state update
+        // re-display components (which ones?)
+    // optional: handle functions for shared event handler logic
 
 // page load actions
+
 
