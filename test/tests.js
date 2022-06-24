@@ -1,5 +1,5 @@
 // IMPORT code to test here
-// import { fn } from '../module.js';
+// import { add } from '../utils.js';
 
 const test = QUnit.test;
 
